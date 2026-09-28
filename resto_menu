@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+void menu()
+{
+    cout << "\n1. Pizza";
+    cout << "\n2. Burger";
+    cout << "\n3. Pasta";
+    cout << "\n4. Exit";
+    cout << "\nENTER YOUR CHOICE:- ";
+}
+
+int main()
+{
+    string orders[5];
+    int choice;
+
+    do
+    {
+        menu();
+        cin >> choice;
+
+        if (choice == 1)
+        {
+            cout << "you have selected pizza!!!\n";
+        }
+        else if (choice == 2)
+        {
+            cout << "you have selected burger!!!\n";
+        }
+        else if (choice == 3)
+        {
+            cout << "you have selected pasta!!!\n";
+        }
+        else if (choice == 4)
+        {
+            cout << "...Thank You...\n";
+        }
+        else
+        {
+            cout << "Invalid choice. Please try again.\n";
+        }
+
+    } while (choice != 4);
+
+    return 0;
+}
