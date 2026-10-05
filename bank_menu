@@ -1,0 +1,53 @@
+#include<iostream>
+using namespace std;
+
+void token()
+{
+    cout << "......State Bank of India......" << endl;
+    cout << "1. Deposit Money " << endl;
+    cout << "2. Display Balance " << endl;
+    cout << "3. Withdraw Money " << endl;
+    cout << "4. Exit " << endl;
+    cout << "Enter your choice:- " << endl;
+}
+
+int main()
+{
+    int choice;
+
+    do
+    {
+        token();
+        cin>>choice;
+
+        if (choice==1)
+        {
+            cout << "Your Money Is Deposited!!!" << endl<<endl;
+        }
+
+        else if (choice==2)
+        {
+            cout << "Your Money has been withdrawn!!! " << endl<<endl;
+        }
+
+        else if (choice==3)
+        {
+            cout << "Your Balance is:- ---" << endl<<endl;
+        }
+
+        else if(choice==4)
+        {
+            cout << "Thank You, Visit Again!!! " << endl<<endl; 
+        }
+
+        else
+        {
+            cout << "INVALID CHOICE , PLEASE ENTER AGAIN : !!" << endl<<endl;
+        }
+
+    } 
+    
+    while (choice != 4);
+    
+   return 0;
+}
